@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Travellian - Start Your Journey</title>
+</head>
+<body>
+    <header class="header" data-header>
+        <div class="container flex flex-jc-sb flex-ai-c">
+            <a href="#" class="logo">
+                <img src="src/images/Logo-light.svg" alt="Travellian home" class="logo-img">
+            </a>
+            <nav class="navbar" data-navbar>
+                <button class="nav-btn nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon class="nav-icon" name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <ul class="navbar-list flex">
+                    <li class="navbar-item">
+                        <a href="#Home" class="link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#Explore" class="link">Explore</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#Travel" class="link">Travel</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#Blog" class="link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#Pricing" class="link">pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="signup">
+                <a href="#" class="link">Login</a>
+                <button class="cta">Sign up</button>
+            </div>
+            <button class="nav-btn nav-open-btn" aria-label="menu" data-nav-toggler>
+                <ion-icon class="nav-icon" name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <section class="section hero">
+        <div class="container">
+            <h1>Start your unforgettable journey with us.</h1>
+            <p class="hero-text">The best travel for your jouney begins now</p>
+
+            <div class="booking">
+                <div class="booking-info">
+                    <div class="booking-item">
+                        <span class="booking-title">Destination</span>
+                        <input class="booking-input" type="text" placeholder="Dubai">
+                    </div>
+                    <div class="booking-item">
+                        <span class="booking-title">Person</span>
+                        <input class="booking-input" type="number" placeholder="2">
+                    </div>
+                    <div class="booking-item">
+                        <span class="booking-title">Check in</span>
+                        <input class="booking-input" type="date">
+                    </div>
+                    <div class="booking-item">
+                        <span class="booking-title">Check out</span>
+                        <input class="booking-input" type="date">
+                    </div>
+                </div>
+                <button class="book-now flex flex-jc-sb flex-ai-c">
+                    <p>Book Now</p>
+                    <ion-icon name="arrow-forward-outline" aria-label="book"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section destination">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <p class="section-text">
+                Most popular destinations around the world, from historical places 
+                to natural wonders.
+            </p>
+            <ul class="card-list">
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                            <div class="card-content">
+                                <h3>
+                                    <a href="#" class="card-title">Monument of Berlin</a>
+                                </h3>
+                                <span class="card-text">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                    Berlin, Germany
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-btn-wrapper">
+                <button class="slider-btn bg-neutral-900">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="slider-btn bg-primary-500">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section special-offer">
+        <div class="container">
+            <h2 class="section-title">Special Offer</h2>
+            <p class="section-text">
+                Check out our special offer and discounts
+            </p>
+            <ul class="card-list">
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">
+                                <a href="#" class="card-title">Lizbon, Portugal</a>
+                            </h3>
+                            <div class="rating flex">
+                                <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                            </div>
+                            <p class="card-description">
+                                5 nights and 4 days in 5 star hotel, breakfast and lunch included. 
+                                Very popular during the renaissance. Passage and going through the cites 
+                                of the world in classical literature.
+                            </p>
+                            <p class="card-price">
+                                from
+                                <span class="price">€500</span>
+                            </p>
+                            <button class="details">Details</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-btn-wrapper">
+                <button class="slider-btn bg-neutral-900">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="slider-btn bg-primary-500">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section blog">
+        <div class="container">
+            <h2 class="section-title">Our Blog</h2>
+            <p class="section-text">
+                An insight the incredible experience in the world
+            </p>
+            <div class="card">
+                <div class="card-banner img-holder">
+                    <img src="./src/images/destination-1.png" loading="lazy" 
+                    alt="Monument of Berlin"
+                    class="img-cover">
+                </div>
+            </div>
+            <h3 class="blog-title">
+                Beautiful Italy Let’s travel
+            </h3>
+            <p class="blog-text">
+                But I must explain to you how all this mistaken idea 
+                of denouncing pleasure and praising pain was born and 
+                I will give you a complete account of the system and 
+                expound the actual teachings of the great explorer of 
+                the truth, the master- builder of human happiness. 
+                No one rejects, dislike, or avoids plasure itself, 
+                because it is pleasure, but because those who do not 
+                know how to pursue pleasure rationally encounter 
+                consequences that are extremly painful. Nor again is 
+                there anyone who loves or pursues.
+            </p>
+            <a href="#" class="read-more">Read More
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+        </div>
+    </section>
+
+    <section class="section trip">
+        <div class="container">
+            <h2 class="section-title">Trip Planners</h2>
+            <p class="section-text">
+                20 years from now you will be more disappointed 
+                by the things that you didn’t do. Stop regretting
+                 and start travelling, start throwing off the bowlines.
+            </p>
+            <button class="view-all">View all trip plans</button>
+            <ul class="card-list">
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                        <div class="card-content">
+                            <div class="flex flex-jc-sb">
+                                <p class="tour-type">Guided tour</p>
+                                <p class="price">€99/Day</p>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#" class="card-title-link">Rome City Tour</a>
+                            </h3>
+                            <div class="flex flex-jc-sb">
+                                <div class="rating flex">
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                </div>
+                                <p class="tour-days">7 Days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                        <div class="card-content">
+                            <div class="flex flex-jc-sb">
+                                <p class="tour-type">Guided tour</p>
+                                <p class="price">€99/Day</p>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#" class="card-title-link">Rome City Tour</a>
+                            </h3>
+                            <div class="flex flex-jc-sb">
+                                <div class="rating flex">
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                </div>
+                                <p class="tour-days">7 Days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                        <div class="card-content">
+                            <div class="flex flex-jc-sb">
+                                <p class="tour-type">Guided tour</p>
+                                <p class="price">€99/Day</p>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#" class="card-title-link">Rome City Tour</a>
+                            </h3>
+                            <div class="flex flex-jc-sb">
+                                <div class="rating flex">
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                </div>
+                                <p class="tour-days">7 Days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                        <div class="card-content">
+                            <div class="flex flex-jc-sb">
+                                <p class="tour-type">Guided tour</p>
+                                <p class="price">€99/Day</p>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#" class="card-title-link">Rome City Tour</a>
+                            </h3>
+                            <div class="flex flex-jc-sb">
+                                <div class="rating flex">
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                    <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                                </div>
+                                <p class="tour-days">7 Days tour</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Destination Gallery</h2>
+            <p class="section-text">Our photo gallery on trip</p>
+            <ul class="gallery-list">
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-banner img-holder">
+                            <img src="./src/images/destination-1.png" loading="lazy" 
+                            alt="Monument of Berlin"
+                            class="img-cover">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-btn-wrapper">
+                <button class="slider-btn bg-neutral-900">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="slider-btn bg-primary-500">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimony">
+        <div class="container">
+            <h2 class="section-title">Traveler's experiences</h2>
+            <p class="section-text">Here some awesome feedback from our travelers</p>
+            <ul class="testimony-list">
+                <li>
+                    <div class="card">
+                        <img src="/src/images/testimony-1.png" class="testimony-image" alt="">
+                        <p class="card-text">
+                            But I must explain to you how all this mistaken 
+                            idea of denouncing pleasure and praising pain was 
+                            born and I will give you a complete account of the 
+                            system and expound the actual teachings of the great 
+                            explorer of the truth, the master- builder of human happiness.
+                        </p>
+                        <div class="rating flex">
+                            <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                            <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                            <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                            <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                            <ion-icon class="star-icon" name="star-sharp"></ion-icon>
+                        </div>
+                        <p class="name">John Doe</p>
+                        <p class="occupation">Accountant</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="slider-btn-wrapper">
+                <button class="slider-btn bg-neutral-900">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="slider-btn bg-primary-500">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="wrapper">
+                <h2 class="section-title">Our Newsletter</h2>
+                <div class="input-wrapper">
+                    <label for="email" class="news-input-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" class="newsletter-input">
+                </div>
+                <button class="btn subscribe">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section footer">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="src/images/Logo-light.svg" alt="Travellian home" class="logo-img">
+            </a>
+            <p class="copyright">Copyright © Travellian 2020 All rights reserved</p>
+            <ul class="footer-menu-list">
+                <li class="footer-header-item">
+                   Menu 
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link">Home</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Explore</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Travel</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Blog</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Pricing</a>
+                 </li>
+            </ul>
+            <ul class="footer-menu-list">
+                <li class="footer-header-item">
+                   Information
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link">Destinations</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Supports</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Terms & Conditions</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">Privacy</a>
+                 </li>
+            </ul>
+            <ul class="footer-menu-list">
+                <li class="footer-header-item">
+                    Contact Info 
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link">+123 456 789</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">info@travellian.com</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">1245, New York, USA</a>
+                 </li>
+            </ul>
+            <ul class="footer-menu-list">
+                <li class="footer-header-item">
+                    Follow us on
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link">Facebook</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">pinterest</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">instagram</a>
+                 </li>
+                 <li class="footer-list-item">
+                    <a href="#" class="link">twitter</a>
+                 </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="/src/js/main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
