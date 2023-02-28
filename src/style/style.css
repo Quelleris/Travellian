@@ -53,6 +53,7 @@ img,
 span,
 button,
 input,
+label,
 ion-icon { display: block; }
 
 a { 
@@ -226,7 +227,7 @@ p {
     margin-bottom: 40px;
 }
 
-.booking-title {
+.input-label {
     font-size: var(--fs-6);
     color: var(--clr-neutral-500);
     text-transform: uppercase;
