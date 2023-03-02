@@ -4,7 +4,7 @@ const header = document.querySelector('[data-header]')
 const logoImg = document.querySelector('.logo-img')
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 70) {
         header.classList.add('active')
         logoImg.src="src/images/Logo-dark.svg"
         

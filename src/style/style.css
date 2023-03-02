@@ -78,7 +78,7 @@ input {
 }
 
 img { height: auto; 
-width: 100%; }
+    width: 100%; }
 
 h1,
 h2,
@@ -172,7 +172,20 @@ p {
     box-shadow: 0 0 2px hsla(0, 0%, 0%, 0.4);
     z-index: 4;
     padding-block: 1rem;
+    transform: translateY(-100%);
+    animation: slideInTop 0.5s ease forwards;
 }
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    } 
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 
 .header.active .nav-open-btn > .nav-icon { color: var(--clr-secondary-900); }
 
@@ -260,10 +273,10 @@ p {
     border-radius: 1rem;
 }
 
-.card .img-cover {
+/* .card .img-cover {
     height: 320px;
     width: auto;
-}
+} */
 
 .card:is(:hover, :focus-within) .img-cover { transform: scale(1.05); }
 
