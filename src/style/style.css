@@ -511,6 +511,50 @@ p {
     background-color: #172432;
 }
 
+.footer .logo,
+.footer-text {
+    margin-bottom: 16px;
+}
+
+.footer .logo img {
+    width: 234px;
+}
+
+.footer-text {
+    font-size: var(--fs-6);
+    color: var(--clr-neutral-100);
+}
+
+.footer-top {
+    display: grid;
+    gap: 60px;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    font-size: 1.25rem;
+    transition: 0.25s ease-in-out;
+}
+
+.footer-list-title {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+    margin-bottom: 16px;
+}
+
+.footer-list li { margin-block-start: 12px; }
+
+.footer .link { transition: 0.25s ease-in-out; }
+
+.footer .link:is(:hover, :focus-visible),
+.social-link:is(:hover, :focus-visible) { color: var(--clr-primary-500); }
+
 /* MOBILE */
 @media(max-width: 768px) {
     .signup { display: none; }
