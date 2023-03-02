@@ -312,7 +312,7 @@ p {
 
 .special-offer .card-content {
     position: unset;
-    background-color: var(--clr-priamry-200);
+    background-color: #FFF8F1;
     padding: 20px;
 }
 
@@ -328,6 +328,35 @@ p {
     font-family: var(--ff-base);
 }
 
+.special-offer .rating {
+    margin-block-start: 8px;
+}
+
+.special-offer .card-description {
+    margin-block: 24px;
+    line-height: 20px;
+}
+
+.card-price {
+    gap: 8px;
+    margin-block-end: 20px;
+}
+
+.special-offer .price {
+    font-size: 32px;
+    color: var(--clr-primary-500);
+}
+
+.details {
+    text-transform: uppercase;
+    background-color: var(--clr-primary-500);
+    padding: 16px 24px;
+    border-radius: 12px;
+    color: var(--clr-neutral-100);
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
 .view-all {
     position: relative;
     background-color: var(--clr-primary-500);
@@ -337,28 +366,27 @@ p {
     margin-left: 12px;
 }
 
-.view-all::before {
+.view-all::before,
+.view-all::after {
     position: absolute;
-    top: -12px;
-    left: -12px;
     display: inline-block;
     height: 43px;
     aspect-ratio: 1;
     content: "";
-    background-color: var(--clr-neutral-900);
     z-index: -1;
 }
 
+.view-all::before {
+    top: -12px;
+    left: -12px;
+    background-color: var(--clr-neutral-900);
+    
+}
+
 .view-all::after {
-    position: absolute;
     bottom: -12px;
     right: -12px;
-    display: inline-block;
-    height: 43px;
-    aspect-ratio: 1;
-    content: "";
     background-color: var(--clr-neutral-500);
-    z-index: -1;
 }
 
 /* BLOG */
