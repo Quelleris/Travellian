@@ -671,6 +671,10 @@ p {
         width: 30%;
         gap: 12px;
     }
+
+    .section.footer {
+        padding-block: 100px 140px;
+    }
 }
 
 @media(min-width: 992px) {
@@ -685,6 +689,10 @@ p {
 
     .navbar .link {
         color: var(--clr-secondary-900);
+    }
+
+    .section.footer {
+        padding-top: 240px;
     }
 
     .footer-top {
