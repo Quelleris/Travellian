@@ -678,7 +678,13 @@ p {
 }
 
 @media(min-width: 992px) {
+    :root {
+        --section-padding: 100px;
+    }
+
     .container { padding-inline: 32px; }
+
+    .section-text { margin-bottom: 100px; }
 
     .nav-open-btn { display: none; }
 
@@ -689,6 +695,12 @@ p {
 
     .navbar .link {
         color: var(--clr-secondary-900);
+    }
+
+    .blog .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
     }
 
     .section.footer {
