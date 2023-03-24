@@ -465,11 +465,18 @@ p {
 /* GALLERY */
 
 .gallery-list {
-    margin-block: 100px;
+    position: relative;
+    margin-block-end: 100px;
 }
+
 
 .gallery-list li {
     margin-block: 32px;
+}
+
+.gallery .img-holder {
+    height: 350px;
+    object-fit: contain;  
 }
 
 /* TESTIMONY */
@@ -701,6 +708,21 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
+    }
+
+    .gallery-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .gallery-img {
+        border-radius: 26px;
+        transition: 0.25s ease-in-out;
+    }
+
+    .gallery-img:hover {
+        transform: translateY(-30px);
     }
 
     .section.footer {
