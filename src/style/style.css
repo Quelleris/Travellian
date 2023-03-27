@@ -48,6 +48,8 @@ body.nav-open { overflow: hidden; }
 
 body.active { overflow: hidden; }
 
+li { list-style: none; }
+
 a,
 img,
 span,
@@ -61,8 +63,6 @@ a {
     font: inherit;
     text-decoration: none; 
 }
-
-li { list-style: none; }
 
 button {
     background: none;
@@ -714,8 +714,10 @@ p {
     }
 
     .navbar .link {
-        color: var(--clr-secondary-900);
+        color: var(--clr-neutral-100);
     }
+
+    .header.active .link { color: var(--clr-secondary-900); }
 
     .blog .grid-wrapper {
         display: grid;
@@ -745,6 +747,29 @@ p {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    .newsletter {
+        position: relative;
+    }
+
+    .newsletter .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 160px;
+        align-items: center;
+        gap: 60px;
+        padding: 60px 40px;
+        background-color: var(--clr-neutral-100);
+    }
+
+    .newsletter .section-title {
+        width: unset;
+        margin: 0;
     }
 
     .section.footer {
