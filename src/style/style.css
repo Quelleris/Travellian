@@ -467,7 +467,6 @@ p {
 .gallery-list {
     display: grid;
     gap: 32px;
-    margin-block-end: 100px;
 }
 
 .gallery-item img {
@@ -722,6 +721,10 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
+    }
+
+    .gallery .section-title {
+        width: max-content;
     }
 
     .gallery-list {
